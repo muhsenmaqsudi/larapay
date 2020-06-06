@@ -16,3 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/pay', 'ZarinpalController@pay');
+Route::get('verify', 'ZarinpalController@verify');
